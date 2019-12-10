@@ -6,20 +6,12 @@ function add_theme_scripts() {
 
     wp_enqueue_style( 'theme_style', get_template_directory_uri() . '/assets/css/master.css', false, '', 'all' );
 
+    wp_enqueue_script('theme_script', get_template_directory_uri().'/assets/js/master.js', array('jquery'), '', false);
+
+    wp_enqueue_style( 'dashicons' );
+
 }
 add_action( 'wp_enqueue_scripts', 'add_theme_scripts' );
-
-function add_site_logo() {
-
-    add_theme_support('custom-logo', array(
-        'flex-width' => true, 
-        'width' => 'auto',
-        'flex-height' => false,
-        'height' => 100,
-    ));
-
-}
-add_action( 'after_setup_theme', 'add_site_logo' );
 
 add_theme_support( 'menus' );
 function register_theme_menus() {
@@ -36,3 +28,20 @@ function register_theme_menus() {
 
 }
 add_action( 'init', 'register_theme_menus' );
+
+//Set up the thme supports
+add_theme_support( 'custom-logo' );
+
+function custom_theme_setup() {
+
+
+
+    //WooCommerce
+    add_theme_support( 'woocommerce' );
+	add_theme_support( 'wc-product-gallery-lightbox' );
+	add_theme_support( 'wc-product-gallery-slider' );
+    add_theme_support( 'wc-product-gallery-zoom' );
+    
+}
+add_action( 'after_setup_theme', 'custom_theme_setup' );
+

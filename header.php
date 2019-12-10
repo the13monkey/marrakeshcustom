@@ -22,9 +22,28 @@
                         </div>
                     </div>
                     <div class="header-bot">
-                        <div class="logo"><?php the_custom_logo(); ?></div>
+                        <div class="logo" style="display:none"><?php the_custom_logo(); ?></div>
                         <div class="box-header-nav megamenu-wrap">
-                            <p>Top menu</p>
+                            <?php wp_nav_menu(
+                                array(
+                                    'theme_location' => 'top-menu',
+                                    'menu_class' => 'main-menu'
+                                )
+                            )?>
+                        </div>
+                        <div class="block-search">
+                            <a href="#" class="woo-search-link" data-toggle="dropdown">
+                                <span class="dashicons dashicons-search"></span>
+                            </a>
+                        </div>
+                        <div class="mobile-block block-menu-bar">
+                            <a href="#" class="menu-bar menu-toggle">menu</a>
+                            <?php wp_nav_menu(
+                                array(
+                                    'theme_location' => 'top-menu',
+                                    'menu_class' => 'main-menu'
+                                )
+                            )?>
                         </div>
                     </div>
                 </div>

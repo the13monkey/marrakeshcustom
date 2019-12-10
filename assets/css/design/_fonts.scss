@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display+SC|Poppins:400,500&display=swap');
+
+$theme_sans: 'Poppins', sans-serif;
+$theme_serif: 'Playfair Display SC', serif;
+
+* {
+    font-family: $theme_sans; 
+}
+
+h3 {
+    font-family: $theme_serif;
+    font-size: 35px;
+    line-height: 45px;
+    font-weight: 400;
+}
