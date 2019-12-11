@@ -1,6 +1,6 @@
 jQuery( document ).ready( function( $ ) {
 
-    $( '.sub-menu' ).hide();
+    $( '.sub-menu' ).hide().addClass( 'slideUp' );
 
     $( '.menu-item-has-children' ).click( function( event ){
 
@@ -8,6 +8,8 @@ jQuery( document ).ready( function( $ ) {
         $(this).find( '.sub-menu' ).toggleClass( 'show' );
 
     } );
+
+    
 
 
 } )

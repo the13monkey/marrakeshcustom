@@ -1,0 +1,21 @@
+footer {
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: center; 
+    padding: 50px 0px; 
+    .backtotop {
+        text-decoration: none; 
+        position: fixed; 
+        bottom: 30px;
+        right: 30px; 
+        span {
+            color: $theme_red;
+            padding: 5px;
+            border: 1px solid $theme_red;
+            background: #fff;
+            border-radius: 50%; 
+        }
+    }
+
+    
+}

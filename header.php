@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title><?php the_title(); ?> | Marrakesh Hair Care</title>
     <?php wp_head(); ?>
+    <!-- Google Analytics -->
 </head>
 <body <?php body_class(); ?>>
     <div class="site" id="page">

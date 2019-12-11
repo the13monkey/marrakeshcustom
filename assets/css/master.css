@@ -14,8 +14,58 @@ h3 {
   font-weight: 400;
 }
 
+.theme-container {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.col {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.col-lg-3 {
+  width: 25%;
+  float: left;
+}
+
 .show {
   display: block !important;
+}
+
+.slideUp {
+  -webkit-animation-name: slideUp;
+          animation-name: slideUp;
+  -webkit-animation-duration: .25s;
+          animation-duration: .25s;
+  -webkit-animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+          animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+@-webkit-keyframes slideUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(50px);
+            transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(50px);
+            transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
 }
 
 .header-inner {
@@ -183,7 +233,7 @@ h3 {
   font-size: 30px;
   font-weight: 400;
   line-height: 30px;
-  margin-top: -12px;
+  margin-top: -2px;
 }
 
 .sub-menu {
@@ -218,6 +268,10 @@ h3 {
   display: none !important;
 }
 
+.mobile-block {
+  display: none;
+}
+
 @media (min-width: 768px) {
   .header-top .top-bar-menu .sub-menu {
     left: auto;
@@ -229,5 +283,40 @@ h3 {
   .header-top .block-userlink .sub-menu {
     top: calc(100% + 5px);
   }
+}
+
+footer {
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 50px 0px;
+}
+
+footer .backtotop {
+  text-decoration: none;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+}
+
+footer .backtotop span {
+  color: #a51e35;
+  padding: 5px;
+  border: 1px solid #a51e35;
+  background: #fff;
+  border-radius: 50%;
+}
+
+.woocommerce-store-notice {
+  background-color: #a51e35 !important;
+}
+
+body {
+  margin: 0;
+}
+
+.sign-up-button a {
+  background-color: #a51e35 !important;
+  color: #fff !important;
 }
 /*# sourceMappingURL=master.css.map */
