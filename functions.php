@@ -45,3 +45,11 @@ function custom_theme_setup() {
 }
 add_action( 'after_setup_theme', 'custom_theme_setup' );
 
+/*
+** WooCommerce Functions
+*/
+
+/* Change Grid View Function
+
+
+

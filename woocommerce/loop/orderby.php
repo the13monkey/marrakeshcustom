@@ -29,3 +29,33 @@ if ( ! defined( 'ABSPATH' ) ) {
 	<input type="hidden" name="paged" value="1" />
 	<?php wc_query_string_form_fields( null, array( 'orderby', 'submit', 'paged', 'product-page' ) ); ?>
 </form>
+
+<div class="grid-view-mode">
+	<a href="#" class="shop_list_style" name="grid">Grid</a>
+	<a href="#" class="shop_list_style" name="list">List</a>
+	<!--
+    <form method="get" action="https://marrakeshhaircare.com/shop/">
+        <button type="submit" class="modes-mode mode-grid display-mode active shop_list_style" value="grid" name="shop_list_style">
+            <span class="button-inner">
+				Grid
+				
+				<span></span>
+                <span></span>
+                <span></span>
+				<span></span>
+				
+            </span>
+        </button>
+        <button type="submit" class="modes-mode mode-list display-mode shop_list_style" value="list" name="shop_list_style">
+            <span class="button-inner">
+				List
+				
+				<span></span>
+            	<span></span>
+				<span></span>
+				
+            </span>
+        </button>
+	</form>
+	-->
+</div>

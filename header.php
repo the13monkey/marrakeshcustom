@@ -11,17 +11,16 @@
 <body <?php body_class(); ?>>
     <div class="site" id="page">
         <header class="header">
+            <div class="header-top">
+                <a href="#"><span class="dashicons dashicons-admin-users"></span>My Account</a>
+                <a href="#"><span class="dashicons dashicons-cart"></span>My Cart</a>
+            </div>
             <div class="header-inner">
                 <div class="header-logo">
                     <div class="logo"><?php the_custom_logo(); ?></div>
                 </div>
                 <div class="header-main">
-                    <div class="header-top">
-                        <p>My account</p>
-                        <div class="header-right">
-                            <p>Mini cart</p>
-                        </div>
-                    </div>
+                    
                     <div class="header-bot">
                         <div class="logo" style="display:none"><?php the_custom_logo(); ?></div>
                         <div class="box-header-nav megamenu-wrap">

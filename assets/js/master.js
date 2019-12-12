@@ -9,7 +9,12 @@ jQuery( document ).ready( function( $ ) {
 
     } );
 
-    
+    $( '.shop_list_style' ).click( function(){
+
+        var list_style = $(this).attr( 'value' );
+        
+
+    } );
 
 
 } )
